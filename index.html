@@ -435,9 +435,26 @@
           </li>
         </ul>
       </div>
+      <div class="footer-form-part">
+        <p class="footer-title text">Subscribe</p>
+        <form class="footer-form">
+        <label class="footer-form-part-userdata">
+          <input class="footer-form-part-input" type="email" name="user_email" required  placeholder="E-mail">
+        </label>
+      
+        <button type="submit" class="footer-form-part-btn">
+          <span class="footer-form-part-btn-text">Subscribe</span>
+          
+          <svg class="footer-form-part-btn-icon" width="24" height="24" >
+            <use href="./images/icons.svg#icon-send"></use>
+          </svg>
+        </button>
+        </form>  
+      </div>
       </div>
     </footer>
-    <div class="backdrop "  data-modal>
+    <!-- ========= MODAL WinDOW -->
+    <div class="backdrop is-hidden"  data-modal>
       <div class="backdrop-modal">
 
         <p class="backdrop-modal-text" >Leave your contacts and we will call you back</p>
@@ -446,17 +463,35 @@
         >
           <label class="backdrop-modal-form-userdata">
           <span class="backdrop-modal-form-input-desc">Name</span>
-          <input class="backdrop-modal-form-input" type="text" name="user_name" required pattern="^[a-zA-Z]+$" minlength="2">
+          <span class="backdrop-modal-form-input-wrapper">
+            <input class="backdrop-modal-form-input" type="text" name="user_name" required pattern="^[a-zA-Z]+$" minlength="2">
+            <svg class="backdrop-modal-form-input-icon" width="18" height="18" >
+              <use href="./images/icons.svg#icon-person"></use>
+            </svg>
+          </span>
+          
         </label>
 
         <label class="backdrop-modal-form-userdata">
           <span class="backdrop-modal-form-input-desc">Phone</span>
-          <input class="backdrop-modal-form-input" type="tel" name="user_phone_number" required pattern="[0-9]{10}">
+          <span class="backdrop-modal-form-input-wrapper">
+            <input class="backdrop-modal-form-input" type="tel" name="user_phone_number" required pattern="[0-9]{10}">
+            <svg class="backdrop-modal-form-input-icon" width="18" height="24" >
+              <use href="./images/icons.svg#icon-phone"></use>
+            </svg>
+          </span>
+          
         </label>
 
         <label class="backdrop-modal-form-userdata">
           <span class="backdrop-modal-form-input-desc">Email</span>
-          <input class="backdrop-modal-form-input" type="email" name="user_email">
+          <span class="backdrop-modal-form-input-wrapper">
+            <input class="backdrop-modal-form-input" type="email" name="user_email">
+            <svg class="backdrop-modal-form-input-icon" width="18" height="24" >
+              <use href="./images/icons.svg#icon-email"></use>
+            </svg>
+          </span>
+          
         </label>
 
         <label class="backdrop-modal-form-userdata">
@@ -464,9 +499,11 @@
           <textarea class="backdrop-modal-form-textarea"name="user_comments"   placeholder="Text input"></textarea>
         </label>
 
-
-        <input id="policy" class="backdrop-modal-form-checkbox" type="checkbox" name="user_policy"  required>
-        <label class="backdrop-modal-form-checkbox" for="policy">I accept the terms and conditions of the <a class="backdrop-modal-form-link" href="">Privacy Policy</a></label>
+        <input id="policy" class="backdrop-modal-form-checkbox-input visually-hidden" type="checkbox" name="user_policy"  required>
+        <label class="backdrop-modal-form-checkbox" for="policy">I accept   the terms and conditions of the&nbsp;<a class="backdrop-modal-form-link" href="">
+               Privacy Policy
+            </a>
+          </label>
 
           <button type="submit" class="backdrop-modal-form-btn">Send</button>
           
