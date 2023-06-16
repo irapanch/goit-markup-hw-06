@@ -474,13 +474,14 @@
 
         <form class="backdrop-modal-form">
           <div class="backdrop-modal-form-wrapper">
-            <label class="backdrop-modal-form-userdata">
+            <label class="backdrop-modal-form-userdata" for="user-name" >
               <span class="backdrop-modal-form-input-desc">Name</span>
               <div class="backdrop-modal-form-input-wrapper">
                 <input
                   class="backdrop-modal-form-input"
                   type="text"
                   name="user-name"
+                  id="user-name"
                   required
                   pattern="^[a-zA-Z]+$"
                   minlength="2"
@@ -496,13 +497,14 @@
             </label>
           </div>
           <div class="backdrop-modal-form-wrapper">
-            <label class="backdrop-modal-form-userdata">
+            <label class="backdrop-modal-form-userdata" for="user-phone-number">
               <span class="backdrop-modal-form-input-desc">Phone</span>
               <div class="backdrop-modal-form-input-wrapper">
                 <input
                   class="backdrop-modal-form-input"
                   type="tel"
                   name="user-phone-number"
+                  id="user-phone-number"
                   required
                   pattern="[0-9]{10}"
                 />
@@ -517,13 +519,14 @@
             </label>
           </div>
           <div class="backdrop-modal-form-wrapper">
-            <label class="backdrop-modal-form-userdata">
+            <label class="backdrop-modal-form-userdata" for="user-email">
               <span class="backdrop-modal-form-input-desc">Email</span>
               <div class="backdrop-modal-form-input-wrapper">
                 <input
                   class="backdrop-modal-form-input"
                   type="email"
                   name="user-email"
+                  id="user-email"
                 />
                 <svg
                   class="backdrop-modal-form-input-icon"
@@ -546,23 +549,40 @@
               ></textarea>
             </label>
           </div>
+         
+          <div class="backdrop-modal-form-wrapper textarea  checkbox">
           <input
-            id="policy"
+            id="user-privacy"
             class="backdrop-modal-form-checkbox-input visually-hidden"
             type="checkbox"
-            name="user_policy"
+            name="user-privacy"
+            value="true"
             required
           />
-          <label class="backdrop-modal-form-checkbox" for="policy"
-            >I accept the terms and conditions of the&nbsp;<a
+          <label class="backdrop-modal-form-checkbox" for="user-privacy"
+            >
+            <span class="backdrop-modal-form-check">
+              <svg
+                  class="backdrop-modal-form-check-icon"
+                  width="10"
+                  height="8"
+                >
+                  <use href="./images/icons.svg#icon-check-mark"></use>
+                </svg>
+            </span>
+            I accept the terms and conditions of the
+            <a
               class="backdrop-modal-form-link"
               href=""
             >
               Privacy Policy
             </a>
           </label>
+          </div>
 
-          <button type="submit" class="backdrop-modal-form-btn">Send</button>
+          <button type="submit" class="backdrop-modal-form-btn">
+            Send
+          </button>
         </form>
       </div>
     </div>
