@@ -473,74 +473,79 @@
         </p>
 
         <form class="backdrop-modal-form">
-          <label class="backdrop-modal-form-userdata">
-            <span class="backdrop-modal-form-input-desc">Name</span>
-            <span class="backdrop-modal-form-input-wrapper">
-              <input
-                class="backdrop-modal-form-input"
-                type="text"
-                name="user_name"
-                required
-                pattern="^[a-zA-Z]+$"
-                minlength="2"
-              />
-              <svg
-                class="backdrop-modal-form-input-icon"
-                width="18"
-                height="18"
-              >
-                <use href="./images/icons.svg#icon-person"></use>
-              </svg>
-            </span>
-          </label>
-
-          <label class="backdrop-modal-form-userdata">
-            <span class="backdrop-modal-form-input-desc">Phone</span>
-            <span class="backdrop-modal-form-input-wrapper">
-              <input
-                class="backdrop-modal-form-input"
-                type="tel"
-                name="user_phone_number"
-                required
-                pattern="[0-9]{10}"
-              />
-              <svg
-                class="backdrop-modal-form-input-icon"
-                width="18"
-                height="24"
-              >
-                <use href="./images/icons.svg#icon-phone"></use>
-              </svg>
-            </span>
-          </label>
-
-          <label class="backdrop-modal-form-userdata">
-            <span class="backdrop-modal-form-input-desc">Email</span>
-            <span class="backdrop-modal-form-input-wrapper">
-              <input
-                class="backdrop-modal-form-input"
-                type="email"
-                name="user_email"
-              />
-              <svg
-                class="backdrop-modal-form-input-icon"
-                width="18"
-                height="24"
-              >
-                <use href="./images/icons.svg#icon-email"></use>
-              </svg>
-            </span>
-          </label>
-
-          <label class="backdrop-modal-form-userdata">
-            <span class="backdrop-modal-form-input-desc">Comment</span>
-            <textarea
-              class="backdrop-modal-form-textarea"
-              name="user_comments"
-              placeholder="Text input"
-            ></textarea>
-          </label>
-
+          <div class="backdrop-modal-form-wrapper">
+            <label class="backdrop-modal-form-userdata">
+              <span class="backdrop-modal-form-input-desc">Name</span>
+              <div class="backdrop-modal-form-input-wrapper">
+                <input
+                  class="backdrop-modal-form-input"
+                  type="text"
+                  name="user-name"
+                  required
+                  pattern="^[a-zA-Z]+$"
+                  minlength="2"
+                />
+                <svg
+                  class="backdrop-modal-form-input-icon"
+                  width="18"
+                  height="24"
+                >
+                  <use href="./images/icons.svg#icon-person"></use>
+                </svg>
+              </div>
+            </label>
+          </div>
+          <div class="backdrop-modal-form-wrapper">
+            <label class="backdrop-modal-form-userdata">
+              <span class="backdrop-modal-form-input-desc">Phone</span>
+              <div class="backdrop-modal-form-input-wrapper">
+                <input
+                  class="backdrop-modal-form-input"
+                  type="tel"
+                  name="user-phone-number"
+                  required
+                  pattern="[0-9]{10}"
+                />
+                <svg
+                  class="backdrop-modal-form-input-icon"
+                  width="18"
+                  height="24"
+                >
+                  <use href="./images/icons.svg#icon-phone"></use>
+                </svg>
+              </div>
+            </label>
+          </div>
+          <div class="backdrop-modal-form-wrapper">
+            <label class="backdrop-modal-form-userdata">
+              <span class="backdrop-modal-form-input-desc">Email</span>
+              <div class="backdrop-modal-form-input-wrapper">
+                <input
+                  class="backdrop-modal-form-input"
+                  type="email"
+                  name="user-email"
+                />
+                <svg
+                  class="backdrop-modal-form-input-icon"
+                  width="18"
+                  height="24"
+                >
+                  <use href="./images/icons.svg#icon-email"></use>
+                </svg>
+              </div>
+            </label>
+          </div>
+          <div class="backdrop-modal-form-wrapper textarea">
+            <label class="backdrop-modal-form-userdata" for="user-comment">
+              <span class="backdrop-modal-form-input-desc">Comment</span>
+              <textarea
+                class="backdrop-modal-form-textarea"
+                name="user-comment"
+                placeholder="Text input"
+                id="user-comment"
+              ></textarea>
+            </label>
+          </div>
           <input
             id="policy"
             class="backdrop-modal-form-checkbox-input visually-hidden"
