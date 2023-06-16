@@ -523,10 +523,7 @@ text-align: center;
 .footer-form-part-btn:focus {
 	background-color: var(--pressed-state-color);
 }
-.footer-form-part-btn-text{
-	
-	
-}
+
 .footer-form-part-btn-icon {
 	margin-left: 16px;
 	fill: var(--white-background-color);
